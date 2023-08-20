@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header.site
+{
+    color: white;
+    background-image: radial-gradient(192.69% 65.51% at 170% 85%, rgba(15, 13, 44, 0) 0px, rgb(15, 13, 44) 100%), linear-gradient(245.69deg, rgb(0, 255, 255) 13.03%, rgb(54, 84, 221));
+}
+
+header.site h1
+{
+    font-weight: 200;
+}
+
+footer.site
+{
+    background-color: rgb(15, 13, 44);
+    color: white;
+}
+
+footer.site a
+{
+    color: white;
+}
