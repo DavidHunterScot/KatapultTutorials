@@ -1,4 +1,5 @@
 ---
+support-email: team@katapult.io
 content_placeholder: {{ content }}
 ---
 <!DOCTYPE html>
@@ -11,20 +12,28 @@ content_placeholder: {{ content }}
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
         <link rel="stylesheet" href="/assets/css/style.css">
     </head>
 
     <body>
         <header class="site">
             <div class="container">
-                <h1>Katapult Tutorials</h1>
+                <h1><a href="/">Katapult Tutorials</a></h1>
             </div>
         </header>
 
         <section class="content">
             <div class="container">
-                {{ content }}
+                <nav>
+                    --- loop( dir = "src" ) ---
+                        <a href="--- loop.uri ---">--- loop.title ---</a>
+                    --- endloop ---
+                </nav>
+
+                <div class="content">
+                    {{ content }}
+                </div>
             </div>
         </section>
 
