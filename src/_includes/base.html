@@ -26,7 +26,7 @@ content_placeholder: {{ content }}
         <section class="content">
             <div class="container">
                 <nav>
-                    --- loop( dir = "src" ) ---
+                    --- loop( dir = "src", ignores = "404" ) ---
                         <a href="--- loop.uri ---">--- loop.title ---</a>
                     --- endloop ---
                 </nav>
